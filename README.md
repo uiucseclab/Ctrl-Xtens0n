@@ -50,6 +50,9 @@ How to Run:
 
 11. If you try to log into for example facebook or twitter the chrome extension will extract the username and password from the form and write it into passwords.txt
 
+NOTE: You can send many different commands after each other, they will only register one by one after loading a new page.
+Also note: After you send a command you need to load a page, and then load another page for the command to register and act.
+
 
 In the future:
 Although this extension is meant to be a "proof-of-concept" of being able to control the extension from a server, it also serves to show how doing that can exploit the security flaws in chrome. It is also meant as a "prank" extension. Something that should be further looked into and researched is being able to make this extension "invisible". This was possible a few years ago however, google has fixed this for now. 
